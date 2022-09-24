@@ -1,0 +1,112 @@
+`<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Restaurant Dapp</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class ="containerblack">
+        
+        <span class="heading"><strong>Restaurant Dapp</strong></span>
+            <button class="connect" onclick="bundle.connect()">Connect Metamask</button> 
+        
+        <div>
+            <div class = "containeryellow">
+                <section>
+                    <div class = "containerred">
+                        <p>Click on the items to select your food on right</p>
+                        <ul>
+                            <li class="pasta dark">Pasta....................................................................................................................................................... <em>1500</em> Wei</li>
+                            <li class="rice dark">Rice.......................................................................................................................................................... <em>5000</em> Wei</li>
+                            <li class="butter dark">Butter Chicken Masala............................................................................................................................ <em>1000</em> Wei</li>
+                            <li class="paneer dark">Paneer Butter Masala.............................................................................................................................. <em>2000</em> Wei</li>
+                            <li class="fried dark">Fried Potatoes.......................................................................................................................................... <em>6000</em> Wei </li>
+                            <li class="french dark">French Fries............................................................................................................................................... <em>200</em> Wei </li>
+                            <li class="chicken dark">Chicken Breast with Brown Rice............................................................................................................ <em>3000</em> Wei </li>
+                            <li class="tuna dark">Tuna Fish................................................................................................................................................ <em>1000</em> Wei </li>
+                            <li class="boiled dark">Boiled Eggs............................................................................................................................................ <em>2000</em> Wei </li>
+                            <li class="beef dark">Beef......................................................................................................................................................... <em>4000</em> Wei </li>
+                            <li class="lady dark">Ladyfinger............................................................................................................................................... <em>5000</em> Wei </li>
+                            <li class="salad dark">Salad........................................................................................................................................................ <em>3000</em> Wei </li>
+                            <li class="pizza dark">Pizza.......................................................................................................................................................... <em>200</em> Wei </li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class = "containerblue">
+                        <p>Your total Calculated in the Bill Portion of Tip Calculator</p>
+                        <ul>
+                            <li class="pasta1 hidden">Pasta....................................................................................................................................................... <em>1500</em> Wei</li>
+                            <li class="rice1 hidden">Rice.......................................................................................................................................................... <em>5000</em> Wei</li>
+                            <li class="butter1 hidden">Butter Chicken Masala............................................................................................................................ <em>1000</em> Wei</li>
+                            <li class="paneer1 hidden">Paneer Butter Masala.............................................................................................................................. <em>2000</em> Wei</li>
+                            <li class="fried1 hidden">Fried Potatoes.......................................................................................................................................... <em>6000</em> Wei </li>
+                            <li class="french1 hidden">French Fries............................................................................................................................................... <em>200</em> Wei </li>
+                            <li class="chicken1 hidden">Chicken Breast with Brown Rice............................................................................................................ <em>3000</em> Wei </li>
+                            <li class="tuna1 hidden">Tuna Fish................................................................................................................................................ <em>1000</em> Wei </li>
+                            <li class="boiled1 hidden">Boiled Eggs............................................................................................................................................ <em>2000</em> Wei </li>
+                            <li class="beef1 hidden">Beef......................................................................................................................................................... <em>4000</em> Wei </li>
+                            <li class="lady1 hidden">Ladyfinger............................................................................................................................................... <em>5000</em> Wei </li>
+                            <li class="salad1 hidden">Salad........................................................................................................................................................ <em>3000</em> Wei </li>
+                            <li class="pizza1 hidden">Pizza.......................................................................................................................................................... <em>200</em> Wei </li>
+                        </ul>
+                    </div>
+                </section>  
+            </div>
+            <div>  
+                <section>
+                    <div class="containergreen">
+                        <div class = "containerorange">
+                            <h2>Tip calculator</h2>
+                            
+                            <form action="">
+                                <div >
+                                    <label for="" class = "fontSize"><strong>Bill:</strong></label>
+                                    <input type="text" class="bill" placeholder="Wei" />
+                                </div>
+                                
+                                
+                                <div class = "designRate">
+                                    <label for="" class = "fontSize"><strong>Tip:</strong></label>
+                                    <select name="" class="rate">
+                                        <option disabled selected value="0">
+                                            0% - No tip
+                                        </option>
+                                        <option value="0.15">15% - Fair</option>
+                                        <option value="0.2">20% - Good</option>
+                                        <option value="0.25">25% - Excellent</option>
+                                    </select>
+                                </div>
+                                
+                                
+                                <button type="button" class="btn">Calculate</button>
+                            </form>
+                            
+                            <div class="result">
+                                <p class="tip">Tip amount: 0 Wei</p>
+                                <p class="total">Total amount: 0 Wei</p>
+                            </div>
+                            
+                        </div>
+                        <div class = "containerviolet">
+                            <p class="bigFont">Total Amount to be paid by you </p>
+                                <input type="number" id="price">
+                                <button class="payNow" onclick= "bundle.amountToPay()">Pay Now</button>
+                            <div class="thankyou">
+                                <p>Keep Revisiting <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    Glad to be part of your Happiness</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+        <script src="./dist/bundle.js"></script> 
+    </body>
+</html>

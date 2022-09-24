@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .heading{
+    display:inline-block;
+    font-size: 50px;
+    padding : 5px 0 5px 140px;
+    color: black;
+    margin:0 450px 0 ;
+  }
+
+  .connect{ 
+    font-size:1.2rem;
+    padding: 10px;
+    background-color: greenyellow;
+    position : relative;
+    bottom : 8px;
+  }
+  .connect:hover{
+    background-color: rgb(14, 244, 14);
+  }
+
+
+
+  h2{
+    font-size: 3rem;
+    margin: 20px;
+  }
+  
+  .fontSize{
+    font-size : 1.5rem;
+  }
+  .bigFont{
+    font-size: 2.5rem;
+  }
+  
+  .designRate{
+    padding:10px ;
+  }
+  .bill{
+    font-size: 1.5rem;
+  }
+  .rate{
+    font-size: 1.5rem;
+  }
+  .dark{
+    background-color : #cce5ff ;
+  }
+  .btn{
+    font-size:1.2rem;
+    padding: 10px;
+    background-color: greenyellow;
+  }
+
+  .btn:hover{
+    background-color: green;
+  }
+
+  .payNow{
+    font-size:1.2rem;
+    padding: 10px;
+    position : relative;
+    bottom : 8px;
+    background-color: rgb(249, 151, 151);
+    
+  }
+  .payNow:hover{
+    background-color: grey;
+  }
+  .tip{
+    font-size: 1.5rem;
+  }
+  .error{
+    font-size: 1.5rem;
+  }
+  .total{
+    font-size: 1.5rem;
+  }
+  #price{
+    font-size : 2.5rem;
+    margin-top: 20px;
+  }
+  
+  .hidden{
+    display:none;
+  }
+  
+  .containeryellow{
+    border: 4px solid red;
+    border-radius: 30px;
+    height:500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .containerred{
+    border: 4px solid red;
+      border-radius: 20px;
+    text-align: left;
+    width: 50rem;
+    height: 22rem;
+    overflow: auto;
+    display:inline-block;
+  }
+  
+  .containerblue{
+      border-radius: 30px;
+    margin-left: 30px;
+    border: 4px solid red;
+    text-align: center;
+    width: 50rem;
+    height: 22rem;
+    overflow: auto;
+    display:inline-block;
+  }
+  
+  .containerblack{
+    border:4px solid black;
+    text-align:center;
+     background: linear-gradient(to bottom right, #ffff00 0%, #ff0000 100%);
+  }
+  
+  ul li{
+    padding: 10px;
+   
+  }
+  
+  #search{
+    margin: 0  auto;
+  }
+  
+  ul{
+    padding : 20px;
+     background: linear-gradient(to bottom right, #ffff00 0%, #ff0000 100%);
+  }
+  
+  ul li{
+    background: turquoise ;
+    color: darkblue;
+    margin: 5px;
+    
+  }
+  ul li:hover{
+    background-color: rgb(30, 30, 241);
+  }
+  
+  .containergreen{
+    
+  border:4px solid red;
+      border-radius: 30px;
+    height:500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+  
+  }
+  
+  .containerorange{
+     background: linear-gradient(to bottom right, #ffff00 0%, #009900 100%);
+  border:4px solid red;
+     width: 50rem;
+    height: 22rem;
+    justify-content: center;
+    display:inline-block;
+      border-radius: 30px;
+  
+  }
+  
+  .containerviolet{
+    border:4px solid red;
+      border-radius: 30px;
+    width: 50rem;
+    height: 22rem;
+     display:inline-block;
+    margin-left: 30px;
+    align-items:center;
+    justify-content: center;
+   
+    
+  }
+  
+  
+  .button1{
+    padding: 30px;
+    margin:4rem;
+    
+  }
+  .button2{
+    padding: 30px;
+    margin:4rem;
+  }
+
+  div p{
+    text-align: center;
+    font-size : 1.5rem;
+    font-weight: 700;
+  }
+
+  .thankyou{
+    background: linear-gradient(to bottom right, #33ccff 0%, #000000 100%);
+   padding:10px;
+   height:10rem;
+   margin:40px;
+    border-radius:30px;
+    font-weight: 700;
+    position: relative;
+    bottom:15px;
+    font-size: 1.5rem;
+  }
+  .total{
+    font-size: 1.5rem;
+  }
+  #price{
+    font-size : 2.5rem;
+  }
+  
+  .hidden{
+    display:none;
+  }
+  
+  .containeryellow{
+    border: 4px solid red;
+    border-radius: 30px;
+    height:500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .containerred{
+    border: 4px solid red;
+      border-radius: 20px;
+    text-align: left;
+    width: 50rem;
+    height: 22rem;
+    overflow: auto;
+    display:inline-block;
+  }
+  
+  .containerblue{
+      border-radius: 30px;
+    margin-left: 30px;
+    border: 4px solid red;
+    text-align: center;
+    width: 50rem;
+    height: 22rem;
+    overflow: auto;
+    display:inline-block;
+  }
+  
+  .containerblack{
+    border:4px solid black;
+    text-align:center;
+     background: linear-gradient(to bottom right, #ffff00 0%, #ff0000 100%);
+  }
+  
+  
+  #search{
+    margin: 0  auto;
+  }
+
+  div p{
+    text-align: center;
+    font-size : 1.5rem;
+    font-weight: 700;
+  }
+
+  .thankyou{
+    background: linear-gradient(to bottom right, #33ccff 0%, #000000 100%);
+   padding:10px;
+   height:10rem;
+   margin:40px;
+    border-radius:30px;
+    font-weight: 700;
+    
+    
+  }
