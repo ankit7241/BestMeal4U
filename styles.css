@@ -4,28 +4,26 @@
   }
   .heading{
     display:inline-block;
-    font-size: 50px;
-    padding : 5px 0 5px 140px;
+    font-size: 3.125rem;
+    padding : 3.125rem 0 0.3125rem 8.75rem;
     color: black;
-    margin:0 450px 0 ;
+    margin:0 28.125rem 0 ;
   }
 
   .connect{ 
     font-size:1.2rem;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: greenyellow;
     position : relative;
-    bottom : 8px;
+    bottom : 0.5rem;
   }
   .connect:hover{
     background-color: rgb(14, 244, 14);
   }
 
-
-
   h2{
     font-size: 3rem;
-    margin: 20px;
+    margin: 1.25rem;
   }
   
   .fontSize{
@@ -36,7 +34,7 @@
   }
   
   .designRate{
-    padding:10px ;
+    padding:0.625rem ;
   }
   .bill{
     font-size: 1.5rem;
@@ -49,7 +47,7 @@
   }
   .btn{
     font-size:1.2rem;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: greenyellow;
   }
 
@@ -59,9 +57,9 @@
 
   .payNow{
     font-size:1.2rem;
-    padding: 10px;
+    padding: 0.625rem;
     position : relative;
-    bottom : 8px;
+    bottom : 0.5rem;
     background-color: rgb(249, 151, 151);
     
   }
@@ -79,7 +77,7 @@
   }
   #price{
     font-size : 2.5rem;
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
   
   .hidden{
@@ -87,17 +85,17 @@
   }
   
   .containeryellow{
-    border: 4px solid red;
-    border-radius: 30px;
-    height:500px;
+    border: 0.25rem solid red;
+    border-radius: 1.875rem;
+    height:31.25rem;
     display:flex;
     align-items: center;
     justify-content: center;
   }
   
   .containerred{
-    border: 4px solid red;
-      border-radius: 20px;
+    border: 0.25rem solid red;
+      border-radius: 1.25rem;
     text-align: left;
     width: 50rem;
     height: 22rem;
@@ -106,9 +104,9 @@
   }
   
   .containerblue{
-      border-radius: 30px;
-    margin-left: 30px;
-    border: 4px solid red;
+      border-radius: 1.875rem;
+    margin-left: 1.875rem;
+    border: 0.25rem solid red;
     text-align: center;
     width: 50rem;
     height: 22rem;
@@ -117,13 +115,13 @@
   }
   
   .containerblack{
-    border:4px solid black;
+    border:0.25rem solid black;
     text-align:center;
      background: linear-gradient(to bottom right, #ffff00 0%, #ff0000 100%);
   }
   
   ul li{
-    padding: 10px;
+    padding: 0.625rem;
    
   }
   
@@ -132,14 +130,14 @@
   }
   
   ul{
-    padding : 20px;
+    padding : 1.25rem;
      background: linear-gradient(to bottom right, #ffff00 0%, #ff0000 100%);
   }
   
   ul li{
     background: turquoise ;
     color: darkblue;
-    margin: 5px;
+    margin: 0.3125rem;
     
   }
   ul li:hover{
@@ -148,9 +146,9 @@
   
   .containergreen{
     
-  border:4px solid red;
-      border-radius: 30px;
-    height:500px;
+  border:0.25rem solid red;
+      border-radius: 1.875rem;
+    height:31.25rem;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -160,36 +158,34 @@
   
   .containerorange{
      background: linear-gradient(to bottom right, #ffff00 0%, #009900 100%);
-  border:4px solid red;
+  border:0.25rem solid red;
      width: 50rem;
     height: 22rem;
     justify-content: center;
     display:inline-block;
-      border-radius: 30px;
+      border-radius: 1.875rem;
   
   }
   
   .containerviolet{
-    border:4px solid red;
-      border-radius: 30px;
+    border:0.25rem solid red;
+      border-radius: 1.875rem;
     width: 50rem;
     height: 22rem;
      display:inline-block;
-    margin-left: 30px;
+    margin-left: 1.875rem;
     align-items:center;
-    justify-content: center;
-   
-    
+    justify-content: center;  
   }
   
   
   .button1{
-    padding: 30px;
+    padding: 1.875rem;
     margin:4rem;
     
   }
   .button2{
-    padding: 30px;
+    padding: 1.875rem;
     margin:4rem;
   }
 
@@ -201,80 +197,90 @@
 
   .thankyou{
     background: linear-gradient(to bottom right, #33ccff 0%, #000000 100%);
-   padding:10px;
+   padding:0.625rem;
    height:10rem;
-   margin:40px;
-    border-radius:30px;
+   margin:2.5rem;
+    border-radius:1.875rem;
     font-weight: 700;
     position: relative;
-    bottom:15px;
+    bottom:0.9375rem;
     font-size: 1.5rem;
   }
-  .total{
-    font-size: 1.5rem;
-  }
-  #price{
-    font-size : 2.5rem;
-  }
-  
-  .hidden{
-    display:none;
+ 
+  @media(max-width:1435px)
+  {
+    html{
+      font-size: 75%;
+    }
   }
   
-  .containeryellow{
-    border: 4px solid red;
-    border-radius: 30px;
-    height:500px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+  @media(max-width:1275px)
+{
+  html{
+    font-size: 68%;
   }
-  
-  .containerred{
-    border: 4px solid red;
-      border-radius: 20px;
-    text-align: left;
-    width: 50rem;
-    height: 22rem;
-    overflow: auto;
-    display:inline-block;
-  }
-  
-  .containerblue{
-      border-radius: 30px;
-    margin-left: 30px;
-    border: 4px solid red;
-    text-align: center;
-    width: 50rem;
-    height: 22rem;
-    overflow: auto;
-    display:inline-block;
-  }
-  
-  .containerblack{
-    border:4px solid black;
-    text-align:center;
-     background: linear-gradient(to bottom right, #ffff00 0%, #ff0000 100%);
-  }
-  
-  
-  #search{
-    margin: 0  auto;
-  }
+}
 
-  div p{
-    text-align: center;
-    font-size : 1.5rem;
-    font-weight: 700;
+@media(max-width:1140px)
+{
+  html{
+    font-size: 60%;
   }
+}
 
-  .thankyou{
-    background: linear-gradient(to bottom right, #33ccff 0%, #000000 100%);
-   padding:10px;
-   height:10rem;
-   margin:40px;
-    border-radius:30px;
-    font-weight: 700;
-    
-    
+
+@media(max-width:1000px)
+{
+  html{
+    font-size: 50%;
   }
+}
+
+@media(max-width:833px)
+{
+  html{
+    font-size: 45%;
+  }
+}
+
+@media(max-width:750px)
+{
+  html{
+    font-size: 35%;
+  }
+}
+
+@media(max-width:590px)
+{
+  html{
+    font-size: 25%;
+  }
+}
+
+@media(max-width:425px)
+{
+  html{
+    font-size: 21%;
+  }
+}
+
+
+
+@media(max-width:400px)
+{
+  .heading{
+    width:25%;
+    height: 5%;
+  }
+  .connect
+  {
+    height: 2%;
+  }
+  
+  .containerred,.containerblue,.containerorange,.containerviolet
+  {
+    width:100%;
+  }
+  
+
+}

@@ -33784,18 +33784,28 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
 }).call(this)}).call(this,require("timers").setImmediate,require("timers").clearImmediate)
 },{"process/browser.js":168,"timers":170}],171:[function(require,module,exports){
 const {ethers} = require("ethers");
+
+// import Web3 from "web3";
+let account;
+
 async function connect()
 {
-	console.log("HII");
+	console.log("Connection Initiated");
 
 	if(typeof window.ethereum !== "undefined")
 	{
-		 ethereum.request({method: "eth_requestAccounts"});
+		 ethereum.request({method: "eth_requestAccounts"}).then(accounts => {
+			account=accounts[0];
+			console.log(account);
+		 });
+		 
 	}
+	console.log("Connection Completed");
 }
 
 async function amountToPay()
 {
+	console.log("Tranfer Initiated");
 	const contractAddress ="0x95CD7c5003Cb25e51b26B1956E570409E6B8C6d8";
 	const abi = [
 		{
@@ -33840,7 +33850,13 @@ async function amountToPay()
 	const provider = new ethers.providers.Web3Provider(window.ethereum);
 	const signer = provider.getSigner();
 	const contract = new ethers.Contract(contractAddress,abi,signer);
-	await contract.sendMoney();
+	// let web3= new Web3(provider);
+	await contract.sendMoney({
+		from: account,
+		value:ethers.utils.parseEther(totalBill.toString()),
+		// value: web3.utils.toWei("2", "ether"),
+	  });
+	console.log("Transfer Completed");
 }
 
 module.exports ={
@@ -33858,9 +33874,9 @@ let text = event.target.classList[0] + "1";
 event.target.classList.toggle("dark")
 document.querySelector("." + text).classList.toggle("hidden");
 let currentPrice = event.target.querySelector("em").innerText;
-amount = amount + parseInt(currentPrice);
+amount = amount + parseFloat(currentPrice);
 if(event.target.classList[1] == "dark")
-amount = amount - (2 * parseInt(currentPrice));
+amount = amount - (2 * parseFloat(currentPrice));
 document.querySelector(".bill").value = amount;
 });
 }
@@ -33874,9 +33890,6 @@ const total = document.querySelector(".total")
 
 btn.addEventListener("click", calculateTip)
 
-
-// .toString()
-// setTimeout(func, time(in ms))
 
 function hideError() {
 setTimeout(() => {
@@ -33902,7 +33915,7 @@ error.style.display = "block"
 hideError()
 }
 else {
-let tipAmount = Math.round(bill * rate)
+let tipAmount = (bill * rate)
 tip.innerHTML = `Tip Amount: ${tipAmount}`
 totalBill = Number(bill) + tipAmount
 total.innerHTML = `Total Amount: ${totalBill}`
